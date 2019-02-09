@@ -178,8 +178,8 @@ class NHLTeams:
                  }
 
 
-nhl_games = dict()
-echl_games = dict()
+nhl_games = dict(dal)
+echl_games = dict(dal)
 
 
 def check_nhl():
