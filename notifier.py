@@ -179,10 +179,10 @@ class NHLTeams:
 
 
 nhl_games = dict(dal)
-echl_games = dict(dal)
+echl_games = dict()
 
 
-def check_nhl():
+def check_nhl(dal):
     try:
         delay = MAX_DELAY
         with urllib.request.urlopen('https://statsapi.web.nhl.com/api/v1/schedule?expand=schedule.linescore') as response:
